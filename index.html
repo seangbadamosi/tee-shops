@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link for External Css -->
     <link rel="stylesheet" href="./style.css">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Link for Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <title>tee shops || home page</title>
@@ -16,15 +20,26 @@
     <header class="">
         <!-- Desktop/Navbar Section -->
         <div class="">
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!">three</a></li>
+            </ul>
             <nav class="red darken-4">
-                <div class="flex">
-                    <div class="flex-2">
+                <div class="row ">
+                    <div class="col l6 push-l1">
                         <img src="./img/logo 1.jpg" alt="" width="30px" class="responsive-img">
                     </div>
-                    <div class="flex-1">
-                        <a href="" class="">Products</a>
-                        <a href="" class="">Explore</a>
-                        <a href="" class="">Contact</a>
+                    <div class="col l2"></div>
+                    <div class="col l4">
+                        <ul>
+                            <!-- Dropdown Trigger -->
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a href="" class="">Contact</a></li>
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                        
                     </div>
                 </div>
             </nav>
@@ -41,7 +56,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(Document).ready(function(){
-            
+            $(".dropdown-trigger").dropdown();
+            $(".dropdown-trigger").dropdown_1();
         });
     </script>
 </body>
