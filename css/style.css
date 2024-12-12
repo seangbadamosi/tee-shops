@@ -1,3 +1,11 @@
 .pt-1{
     margin-top: 10px;
 }
+
+.slider .indicators .indicator-item {
+    background-color: #e0e0e0;
+}
+
+.slider .indicators .indicator-item.active{
+    background-color: orange;
+}
