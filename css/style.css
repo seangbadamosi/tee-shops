@@ -25,3 +25,7 @@
     color: white !important;
     background-color: lightblue !important;
 }
+
+.pt-1{
+    padding-top: 15vh;
+}
