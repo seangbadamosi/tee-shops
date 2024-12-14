@@ -9,3 +9,8 @@
 .slider .indicators .indicator-item.active{
     background-color: orange;
 }
+
+
+.mt-1{
+    margin-top: 15vh;
+}
