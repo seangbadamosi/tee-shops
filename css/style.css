@@ -14,3 +14,14 @@
 .mt-1{
     margin-top: 15vh;
 }
+
+.btn-outline{
+    border: 1px solid lightblue !important;
+    border-radius: 5px;
+}
+
+.btn-outline:hover{
+    border: 1px solid lightblue !important;
+    color: white !important;
+    background-color: lightblue !important;
+}
