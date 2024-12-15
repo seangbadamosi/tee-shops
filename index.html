@@ -74,7 +74,7 @@
     <!-- Main Section -->    
     <main class="">
     <!-- Slider Section -->
-    <div class="slider" >
+    <div class="slider scrollspy" id="home">
         <ul class="slides">
             <li>
                 <img src="/Assest/img/Slider-image-1.jpg" alt="" class="responsive-img " style="background-position: top;">
@@ -166,7 +166,7 @@
     <section class="section container">
         <div class="">
             <div class="flex">
-                <div class="flex-1">
+                <div class="flex-1 scrollspy" id="product">
                     <h4>Top Selling Products</h4>
                 </div>
                 <div class="flex-2">
@@ -417,7 +417,7 @@
 
     <!-- Contact Us Section -->
     <section class="section container">
-        <div class="">
+        <div class="scrollspy" id="contact">
             <div class="center-align">
                 <h5 class="">Stay Up To Date With Us</h5>
                 <p class="">Sign up right now to recieve information about our products and discounts that are available</p>
@@ -452,9 +452,9 @@
                 <div class="row">
                     <div class="col l4">
                         <a href="" class="black-text"><h6>Quick Links</h6></a>
-                        <a href="/index.html" class="blue-grey-text">Home</a><br>
-                        <a href="" class="blue-grey-text">Products</a><br>
-                        <a href="" class="blue-grey-text">Contac Us</a>
+                        <a href="#home" class="blue-grey-text">Home</a><br>
+                        <a href="#product" class="blue-grey-text">Products</a><br>
+                        <a href="#contact" class="blue-grey-text">Contact Us</a>
                     </div>
                     <div class="col l4">
                         <a href="" class="black-text"><h6>Explore Tee's Shops</h6></a>
@@ -465,8 +465,8 @@
                     </div>
                     <div class="col l4">
                         <a href="" class="black-text"><h6>Contact Us</h6></a>
-                        <i class="fa-brands fa-youtube fa-2xl" style="color: #29d4ff;"></i>
-                        <i class="fa-brands fa-whatsapp fa-2xl" style="color: #29d4ff;"></i>
+                        <a href="https://www.youtube.com" target="_blank" class=""><i class="fa-brands fa-youtube fa-2xl" style="color: #29d4ff;"></i></a>
+                        <a href="tel:+23408083308461" target="_blank" class=""><i class="fa-brands fa-whatsapp fa-2xl" style="color: #29d4ff;"></i></a>
                         <i class="fa-brands fa-facebook fa-2xl" style="color: #29d4ff;"></i>
                         <i class="fa-brands fa-twitter fa-2xl" style="color: #29d4ff;"></i>
                     </div>
@@ -492,6 +492,7 @@
                 duration : 2000, // how long it transit to the next picture
                 interval : 5000 // how long it takes to move to the next picture
             });
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
