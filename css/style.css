@@ -47,3 +47,14 @@
     align-items: center !important;
     justify-content: space-around !important;
 }
+
+@media screen and (max-width:700px)  {
+    .btn{
+        font-size: 10px !important;
+        width: auto;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+}
