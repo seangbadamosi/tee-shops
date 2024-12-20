@@ -65,3 +65,29 @@
         font-size: 30px;
     }
 }
+
+.d-inline{
+    display: inline !important;
+}
+
+.flex-sd{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: row ;
+    gap: 10vw;
+}
+
+.flex-sd-1{
+    display: flex;
+    justify-content: start;
+    align-items: center !important;
+    gap: 200vw;
+}
+
+.flex-sd-2{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10vw ;
+}
